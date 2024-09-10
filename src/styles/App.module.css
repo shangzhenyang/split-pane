@@ -1,0 +1,15 @@
+.panel {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  height: 300px;
+  justify-content: center;
+}
+
+.panel.yellow {
+  background-color: rgb(253, 232, 198);
+}
+
+.panel.blue {
+  background-color: rgb(226, 238, 253);
+}

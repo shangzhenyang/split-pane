@@ -1,0 +1,34 @@
+.split-pane-child {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.split-pane-left {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.split-pane-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.split-pane-divider {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: col-resize;
+  flex: 0 0 5px;
+  transition:
+    background-color 0.25s,
+    transform 0.25s;
+}
+
+.split-pane-divider:focus,
+.split-pane-divider:hover {
+  background-color: #d0d0d0;
+  transform: scaleX(1.5);
+}
+
+.split-pane-divider:active {
+  background-color: #007bff;
+}
